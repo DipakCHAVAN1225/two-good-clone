@@ -1,0 +1,264 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+*::selection{
+  color: #fff;
+  background-color: #000;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: #F7F7F7;
+
+}
+ .nav{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20000;
+  position: absolute;
+} 
+.svg-block svg{
+  display: block;
+
+}
+.svg-block{
+  height: 85px;
+  overflow: hidden;
+}
+
+.mouse{
+  transform: translate(-50%,-50%);
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background-color:rgb(255, 235, 208);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+
+#page1{
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  padding-top: 30vh;
+  padding-left: 2vw;
+
+}
+#page1 h1{
+  text-transform: uppercase;
+  font-size: 15.1vw;
+  font-weight: bolder;
+  line-height: 0.9;
+  font-family:futura;
+}
+#video-cont{
+  height: 100vh;
+  width: 100%;
+  margin-top: 1vw;
+  position: relative;
+}
+#video-cont video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+ #video-cont .play{
+  font-family: futura;
+  font-weight: 600;
+  text-transform: uppercase;
+  height: 100px ;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position:fixed;
+  opacity: 0;
+  scale: 0;
+  /* transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear; */
+}
+#page2{
+   min-height:90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+
+}
+ #page2 .elem{
+  height: 100vh;
+  width: 32%;
+  overflow: hidden;
+  position: relative;
+}
+.elem img{
+  scale: 1.1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.elem .dets{
+  position: absolute;
+  height: 60px;
+  z-index: 9;
+  border-radius: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  background-color:palegoldenrod;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+#page3{
+  width: 100%;
+  min-height: 120vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+
+}
+.child{
+  margin-bottom: 1vh;
+  height: 60vh;
+  width: 40%;
+  position: relative;
+
+
+}
+.child img{
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+}
+#child1{
+  width:50vw;
+  margin-left: 2vw;
+}
+#child1 h1{
+  font-size: 4vw;
+  font-family: futura;
+  text-transform: uppercase;
+  line-height: 1;
+
+
+}
+#child2{
+  width: 30%;
+}
+#child2 p{
+  font-family: sans-serif;
+  font-size: 1.2vw;
+  color: #615e5e;
+  margin-bottom: 10vh;
+
+
+}
+#child2 span{
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  color: #4a4747;
+  text-transform: uppercase;
+  font-family: futura;
+
+}
+#child2 :nth-child(2){
+  margin-top: 50px;
+}
+#child3{
+  margin-top: -20vh;
+  margin-bottom: 10vh;
+
+
+}
+#child4{
+
+  margin-top: -20vh;
+  margin-bottom: 10vh;
+}
+@media (max-width:600px) {
+.child{
+  margin-bottom: 2vh;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2vw;
+  position: relative;
+}
+
+  #page1{
+    width: 100%;
+  min-height: 60vh;
+  padding:0 5vw;
+  padding-top: 25vh;
+
+
+}
+#page1 h1{
+  font-size: 14vw;
+  letter-spacing: -4px;
+}
+#video-cont{
+  height: 25vh;
+  width: 100%;
+  margin-top: 4vw;
+}
+#page2{
+  min-height:100vh;
+ height: 100%;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ padding:5vw 3vh;
+
+}
+#page2 .elem{
+ height: 70vh;
+ width: 100%;
+overflow: hidden;
+margin-bottom: 3vw;
+}
+.elem img{
+ scale: 1.1;
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+}
